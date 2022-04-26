@@ -1,0 +1,382 @@
+/*Center Modal*/
+
+.modal.center {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal.center:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal.center .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+/*Modal Scale In*/
+
+.fade-scale {
+    transform: scale(0.9);
+    opacity: 0.6;
+    -webkit-transition: all .094s linear;
+    -o-transition: all .094s linear;
+    transition: all .094s linear;
+}
+
+.fade-scale.in {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/*Blue Modal*/
+
+.modal.lilee-blue-modal .modal-dialog {
+    max-width: 700px;
+}
+
+.modal.lilee-blue-modal .modal-dialog .modal-content {
+    box-shadow: 0 10px 24px rgba(34, 36, 38, 0.15);
+    border: none;
+    border-radius: 3px;
+}
+
+.modal.lilee-blue-modal .modal-dialog .modal-content .modal-header {
+    color: #fff;
+    background: linear-gradient(to left, #28a5f5, #1e87f0);
+    font-size: 1.4rem;
+    height: auto;
+    padding: 1rem 1.4rem;
+}
+
+.modal.lilee-blue-modal .modal-dialog .modal-content .modal-header .modal-title {
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.modal.lilee-blue-modal .modal-dialog .modal-content .modal-footer .dismiss {
+    float: left;
+}
+
+.modal.lilee-blue-modal .modal-dialog .modal-content .modal-body {
+    height: 360px;
+    overflow: auto;
+    padding: 1.2rem 1.5rem;
+}
+
+.modal.lilee-blue-modal .modal-dialog .modal-content .modal-footer {
+    background: #fbfbfb;
+    padding: 1rem;
+    border-top: 1px solid #c5c5c5;
+}
+
+.modal.lilee-blue-modal .modal-dialog .modal-content .modal-header .close {
+    color: #fff;
+    margin-top: 6px;
+    opacity: 0.76;
+}
+
+.modal.lilee-blue-modal .modal-dialog .modal-content .modal-header .close:hover,
+.modal.lilee-blue-modal .modal-dialog .modal-content .modal-header .close:focus {
+    opacity: 1;
+}
+
+.modal.lilee-blue-modal .modal-dialog .label{
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+
+/* Asset Details Modal*/
+.modal.asset-details-modal .modal-dialog {
+  min-width: 1100px;
+  max-width: 1200px;
+}
+
+.modal.asset-details-modal .modal-dialog .modal-content {
+  box-shadow: 0 10px 24px rgba(34, 36, 38, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.modal.asset-details-modal .modal-dialog .modal-content .modal-header {
+  color: #fff;
+  background: linear-gradient(to left, #28a5f5, #1e87f0);
+  font-size: 1.4rem;
+  height: auto;
+  padding: 1rem 1.4rem;
+}
+
+.modal.asset-details-modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.modal.asset-details-modal .modal-dialog .modal-content .modal-footer .dismiss {
+  float: left;
+}
+
+.modal.asset-details-modal .modal-dialog .modal-content .modal-body {
+  height: 400px;
+  /*overflow: auto;*/
+  padding: 1.2rem 1.5rem;
+}
+
+.modal.asset-details-modal .modal-dialog .modal-content .modal-footer {
+  background: #fbfbfb;
+  padding: 1rem;
+  border-top: 1px solid #c5c5c5;
+}
+
+.modal.asset-details-modal .modal-dialog .modal-content .modal-header .close {
+  color: #fff;
+  margin-top: 6px;
+  opacity: 0.76;
+}
+
+.modal.asset-details-modal .modal-dialog .modal-content .modal-header .close:hover,
+.modal.asset-details-modal .modal-dialog .modal-content .modal-header .close:focus {
+  opacity: 1;
+}
+
+.modal.asset-details-modal .modal-dialog .label{
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+/*Raw Data Modal*/
+
+.modal.lilee-raw-data-modal .modal-dialog {
+  max-width: 900px;
+  min-width: 750px;
+}
+
+.modal.lilee-raw-data-modal .modal-dialog .modal-content {
+  box-shadow: 0 10px 24px rgba(34, 36, 38, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.modal.lilee-raw-data-modal .modal-dialog .modal-content .modal-header {
+  color: #fff;
+  background: linear-gradient(to left, #28a5f5, #1e87f0);
+  font-size: 1.4rem;
+  height: auto;
+  padding: 1rem 1.4rem;
+}
+
+.modal.lilee-raw-data-modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.modal.lilee-raw-data-modal .modal-dialog .modal-content .modal-footer .dismiss {
+  float: left;
+}
+
+.modal.lilee-raw-data-modal .modal-dialog .modal-content .modal-body {
+  height: 360px;
+  overflow: auto;
+  padding: 1.2rem 1.5rem;
+}
+
+.modal.lilee-raw-data-modal .modal-dialog .modal-content .modal-footer {
+  background: #fbfbfb;
+  padding: 1rem;
+  border-top: 1px solid #c5c5c5;
+}
+
+.modal.lilee-raw-data-modal .modal-dialog .modal-content .modal-header .close {
+  color: #fff;
+  margin-top: 6px;
+  opacity: 0.76;
+}
+
+.modal.lilee-raw-data-modal .modal-dialog .modal-content .modal-header .close:hover,
+.modal.lilee-raw-data-modal .modal-dialog .modal-content .modal-header .close:focus {
+  opacity: 1;
+}
+
+.modal.lilee-raw-data-modal .modal-dialog .label{
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+
+/*Job Details Modal*/
+
+.modal.job-details-modal .modal-dialog {
+  max-width: 100%;
+  min-width: 1200px;
+}
+
+.modal.job-details-modal .modal-dialog .modal-content {
+  box-shadow: 0 10px 24px rgba(34, 36, 38, 0.15);
+  border: none;
+  border-radius: 3px;
+  max-width: 100%;
+}
+
+.modal.job-details-modal .modal-dialog .modal-content .modal-header {
+  color: #fff;
+  background: linear-gradient(to left, #28a5f5, #1e87f0);
+  font-size: 1.4rem;
+  height: auto;
+  padding: 1rem 1.4rem;
+}
+
+.modal.job-details-modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.modal.job-details-modal .modal-dialog .modal-content .modal-footer .dismiss {
+  float: left;
+}
+
+.modal.job-details-modal .modal-dialog .modal-content .modal-body {
+  max-height: 600px;
+  min-height: 400px;
+  /*overflow: auto;*/
+  padding: 1.2rem 1.5rem;
+}
+
+.modal.job-details-modal .modal-dialog .modal-content .modal-footer {
+  background: #fbfbfb;
+  padding: 1rem;
+  border-top: 1px solid #c5c5c5;
+}
+
+.modal.job-details-modal .modal-dialog .modal-content .modal-header .close {
+  color: #fff;
+  margin-top: 6px;
+  opacity: 0.76;
+}
+
+.modal.job-details-modal .modal-dialog .modal-content .modal-header .close:hover,
+.modal.job-details-modal .modal-dialog .modal-content .modal-header .close:focus {
+  opacity: 1;
+}
+
+.modal.job-details-modal .modal-dialog .label{
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+
+
+/*Job Creation Modal*/
+
+.modal.job-creation-modal .modal-dialog {
+  max-width: 900px;
+  min-width: 900px;
+}
+
+.modal.job-creation-modal .modal-dialog .modal-content {
+  box-shadow: 0 10px 24px rgba(34, 36, 38, 0.15);
+  border: none;
+  border-radius: 3px;
+}
+
+.modal.job-creation-modal .modal-dialog .modal-content .modal-header {
+  color: #fff;
+  background: linear-gradient(to left, #28a5f5, #1e87f0);
+  font-size: 1.4rem;
+  height: auto;
+  padding: 1rem 1.4rem;
+}
+
+.modal.job-creation-modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+.modal.job-creation-modal .modal-dialog .modal-content .modal-footer .dismiss {
+  float: left;
+}
+
+.modal.job-creation-modal .modal-dialog .modal-content .modal-body {
+  max-height: 600px;
+  min-height: 400px;
+  /*overflow: auto;*/
+  padding: 1.2rem 1.5rem;
+}
+
+.modal.job-creation-modal .modal-dialog .modal-content .modal-footer {
+  background: #fbfbfb;
+  padding: 1rem;
+  border-top: 1px solid #c5c5c5;
+}
+
+.modal.job-creation-modal .modal-dialog .modal-content .modal-header .close {
+  color: #fff;
+  margin-top: 6px;
+  opacity: 0.76;
+}
+
+.modal.job-creation-modal .modal-dialog .modal-content .modal-header .close:hover,
+.modal.job-creation-modal .modal-dialog .modal-content .modal-header .close:focus {
+  opacity: 1;
+}
+
+.modal.job-creation-modal .modal-dialog .label{
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+
+/*Simple Modal*/
+
+.modal.lilee-simple-modal .modal-dialog {
+    max-width: 380px;
+}
+
+.modal.lilee-simple-modal .modal-dialog .modal-content {
+    box-shadow: 0 10px 24px rgba(34, 36, 38, 0.15);
+    border: none;
+    border-radius: 3px;
+}
+
+.modal.lilee-simple-modal .modal-dialog .modal-content .modal-header {
+    padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+    border-bottom: none;
+    color: #222;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+.modal.lilee-simple-modal .modal-dialog .modal-content .modal-body {
+    padding: 0.5rem 1.5rem 2rem 1.5rem;
+    line-height: 1.6rem;
+    color: #7D7D7D;
+    font-weight: 400;
+}
+
+.modal.lilee-simple-modal .modal-dialog .modal-content .modal-footer {
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+    border: none;
+}
+
+/*Fullscreen Modal*/
+
+.modal.lilee-fullscreen-modal {
+    padding: 0 !important;
+}
+
+.modal.lilee-fullscreen-modal .modal-dialog {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.modal.lilee-fullscreen-modal .modal-content {
+    height: auto;
+    min-height: 100%;
+    border: 0 none;
+    border-radius: 0;
+}

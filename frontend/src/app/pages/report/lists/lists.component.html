@@ -1,0 +1,34 @@
+<div class="" style="margin: 0 2rem">
+    <div class="row">
+      <h4>Upload Report</h4>
+    </div>
+    <div class="row">
+        <div class="input-group">
+            <input type="file" (click)="onClick()" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" (change)="onFilechange($event)">
+            <button class="btn btn-outline-secondary" type="button" (click)="uploadFile()" id="inputGroupFileAddon04">Upload</button>
+        </div>
+        <div *ngIf="errorMessage != ''" class="error" style="padding-top: 15px;">
+          <div class="alert alert-danger" role="alert">
+            Error: {{ errorMessage }}
+          </div>
+        </div>
+        <div *ngIf="show" style="padding-top: 10px;">
+            <table class="table table-striped table-hover table-bordered ">
+                <thead>
+                  <tr>
+                    <th scope="col">employeeId</th>
+                    <th scope="col">payPeriod</th>
+                    <th scope="col">amountPaid</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let employeeReport of employeeReports" >
+                    <td>{{ employeeReport.employeeId }}</td>
+                    <td>{{ employeeReport.payPeriod.startDate }} - {{ employeeReport.payPeriod.endDate }}</td>
+                    <td>{{ employeeReport.amountPaid }}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+  </div>

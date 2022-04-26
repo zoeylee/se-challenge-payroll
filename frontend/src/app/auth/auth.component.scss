@@ -1,0 +1,46 @@
+.login-form {
+    margin-top: 100px;
+    //margin-bottom: 15px;
+    //top: 80px;
+    //margin: auto;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    width: 400px;
+    position: absolute;
+    //top: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .form-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .form-group {
+      padding-top: 10px;
+      .input-group-prepend  {
+        #basic-addon1.input-group-text {
+          height: 100%
+        }
+      }
+      
+      &.login-in-button {
+        padding-top: 20px;
+        
+      }
+  }
+
+.valid-error {
+  width: 100%;
+    margin-top: 0.25rem;
+    font-size: 80%;
+    color: #dc3545;
+}

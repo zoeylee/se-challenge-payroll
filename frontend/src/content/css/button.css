@@ -1,0 +1,316 @@
+.ic-button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #DFDFDF;
+  border-radius: 2px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  line-height: 1.5;
+  padding-bottom: calc(0.375em - 1px);
+  padding-left: calc(0.825em - 1px);
+  padding-right: calc(0.825em - 1px);
+  padding-top: calc(0.375em - 1px);
+  position: relative;
+  vertical-align: middle;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  color: #222;
+  min-width: 32px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ic-button:active {
+  outline: none;
+  border-color: #7D7D7D;
+}
+
+.ic-button:focus {
+  outline: none;
+}
+
+.ic-button:active:focus {
+  outline: none;
+  border-color: #7D7D7D;
+}
+
+.ic-button:hover {
+  border-color: #B5B5B5;
+  background: rgba(255, 255, 255, 0.4);
+}
+.ic-button.disabled{
+  opacity: 0.4;
+  pointer-events: none;
+}
+.ic-button.brand {
+  background-color: #FF8300;
+  border-color: #FF8300;
+  color: #FFF;
+}
+
+.ic-button.brand:hover {
+  background-color: #FF9900;
+}
+
+.ic-button.brand:active:focus {
+  background-color: #FF7300;
+  border-color: #FF8300;
+}
+
+.ic-button.sunrise {
+  background-color: #FFA500;
+  border-color: #FFA500;
+  color: #FFF;
+}
+
+.ic-button.sunrise:hover {
+  background-color: #FFB100;
+}
+
+.ic-button.sunrise:active:focus {
+  background-color: #FF9500;
+  border-color: #FFA500;
+}
+
+.ic-button.teal {
+  background-color: #00AAFF;
+  border-color: #00AAFF;
+  color: #FFF;
+}
+
+.ic-button.teal:hover {
+  background-color: #00B5FF;
+}
+
+.ic-button.teal:active:focus {
+  background-color: #0095FF;
+  border-color: #00AAFF;
+}
+
+.ic-button.ruby {
+  background-color: #C50A0A;
+  border-color: #C50A0A;
+  color: #FFF;
+}
+
+.ic-button.ruby:hover {
+  background-color: #DC0909;
+}
+
+.ic-button.ruby:active:focus {
+  background-color: #B50909;
+  border-color: #C50A0A;
+}
+
+.ic-button.grey {
+  background-color: #DFDFDF;
+  border-color: #DFDFDF;
+}
+
+.ic-button.grey:hover {
+  background-color: #EDEDED;
+}
+
+.ic-button.grey:active:focus {
+  background-color: #DFDFDF;
+  border-color: #DFDFDF;
+}
+
+.ic-button.brand-hollow {
+  background-color: transparent;
+  border-color: #FF8300;
+  color: #FF7300;
+}
+
+.ic-button.brand-hollow:hover {
+  background-color: #FFF8EE;
+}
+
+.ic-button.brand-hollow:active:focus {
+  border-color: #FF7300;
+}
+
+.ic-button.sunrise-hollow {
+  background-color: transparent;
+  border-color: #FFA500;
+  color: #FF9500;
+}
+
+.ic-button.sunrise-hollow:hover {
+  background-color: #FFFDDA;
+}
+
+.ic-button.sunrise-hollow:active:focus {
+  border-color: #FFA500;
+}
+
+.ic-button.teal-hollow {
+  background-color: transparent;
+  border-color: #00AAFF;
+  color: #0095FF;
+}
+
+.ic-button.teal-hollow:hover {
+  background-color: #F4FbFC;
+}
+
+.ic-button.teal-hollow:active:focus {
+  border-color: #00AAFF;
+}
+
+.ic-button.ruby-hollow {
+  background-color: transparent;
+  border-color: #C50A0A;
+  color: #B50909;
+}
+
+.ic-button.ruby-hollow:hover {
+  background-color: #FFE6E6;
+}
+
+.ic-button.ruby-hollow:active:focus {
+  border-color: #C50A0A;
+}
+
+.ic-button.bold {
+  font-weight: 600;
+}
+
+.ic-button.large {
+  font-size: 1.2rem;
+  padding: .6rem 1.4rem;
+}
+
+.ic-button.fluid {
+  width: 100%;
+}
+
+/*Loader*/
+
+.ic-button.loading {
+  pointer-events: none;
+  cursor: default;
+
+}
+
+.ic-button.loading.invert:after {
+  border-color: rgba(255, 255, 255, 0.94) transparent transparent;
+}
+
+.ic-button.loading:after,
+.ic-button.loading:before {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+  margin-top: -.5em;
+}
+
+.ic-button.loading:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  margin: -.64285714em 0 0 -.64285714em;
+  width: 1em;
+  height: 1em;
+  -webkit-animation: button-spin .6s linear;
+  animation: button-spin .6s linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  border-radius: 500rem;
+  border-color: #7D7D7D transparent transparent;
+  border-style: solid;
+  border-width: .2em;
+  box-shadow: 0 0 0 1px transparent;
+}
+
+.ic-button.loading:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  margin: -.64285714em 0 0 -.64285714em;
+  width: 1em;
+  height: 1em;
+  border-radius: 500rem;
+  border: .2em solid rgba(0, 0, 0, .1);
+}
+
+@-moz-keyframes button-spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes button-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes button-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ic-button.single-icon {
+  min-width: unset;
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.ic-button.icon i {
+  margin-right: 4px;
+}
+
+.ic-button.loading.grey-out:before {
+  opacity: 0.4;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.ic-button.loading.invert:before {
+  opacity: 0.8;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+}
+
+.ic-button.small {
+  font-size: 0.94rem;
+  padding: 0.2rem 0.4rem;
+  line-height: 0.94;
+}
+.ic-button.small.single-icon {
+  font-size: 0.94rem;
+  padding: 0.2rem;
+  line-height: 0.94;
+}

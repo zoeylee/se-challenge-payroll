@@ -1,0 +1,66 @@
+<div class="container">
+    <div class="row">
+      <div class="col align-self-center">
+        <div class="login-form">
+          <div class="form-title">
+            <b>Sign in</b>
+          </div>
+  
+          <app-list-errors [errors]="errors"></app-list-errors>
+          <form [formGroup]="authForm" (ngSubmit)="submitForm()">
+            <fieldset [disabled]="isSubmitting">
+  
+              <fieldset class="form-group username">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                      <i class="ic-user"></i>
+                    </span>
+                  </div>
+                  <input [disabled]="isSubmitting" id="username" formControlName="username" placeholder="Username" class="form-control form-control-lg" [ngClass]="{'is-invalid': username.hasError('minlength')}"
+                    type="text" required="required" />
+                </div>
+  
+                <div class="valid-error" [hidden]="!username.hasError('minlength')" >
+                  The username requires at least 4 characters
+                </div>
+              </fieldset>
+  
+              <fieldset class="form-group password">
+                <div class="form-group">
+                  <div class="input-group">
+  
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">
+                            <i class="ic-lock"></i>
+                        </span>
+                      </div>
+                    <input [disabled]="isSubmitting" id="password" formControlName="password" placeholder="Password" class="form-control form-control-lg" [ngClass]="{'is-invalid': password.hasError('minlength')}"
+                      type="password" required="required" />
+                  </div>
+                </div>
+  
+                <div class="valid-error" [hidden]="!password.hasError('minlength')">
+                  The password must be more than 8 characters long
+                </div>
+  
+              </fieldset>
+  
+              <div class="form-group login-in-button">
+                <button class="ic-button sunrise fluid" type="submit" style="height: 36px;" [ngClass]="{'loading invert':loading}">
+                  <div class='content'>
+                    <span *ngIf="!loading">LOGIN</span>
+                  </div>
+                </button>
+              </div>
+            </fieldset>
+  
+          </form>
+          
+          
+        </div>
+  
+      </div>
+    </div>
+  
+  </div>

@@ -1,0 +1,19 @@
+@mixin pager-icon {
+    width: 8px;
+    height: 18px;
+    border: none;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.pager-icon-left {
+    @include pager-icon;
+    background-image: url("/assets/images/ic-left.png");
+
+}
+
+.pager-icon-right {
+    @include pager-icon;
+    background-image: url("/assets/images/ic-right.png");
+}

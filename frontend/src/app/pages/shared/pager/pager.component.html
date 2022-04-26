@@ -1,0 +1,20 @@
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination  pagination-sm">
+      <li class="page-item" [ngClass]="{disabled: pager.pageNo === 1}" (click)="setPage(pager.pageNo - 1)">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Previous</span>
+        </a>
+      </li>
+      <li *ngFor="let item of pager.pageItems" class="page-item" [ngClass]="{active: pager.pageNo === item}" (click)="setPage(item)">
+        <a class="page-link" href="#">1</a>
+      </li>
+      <li class="page-item" [ngClass]="{disabled: pager.pageNo === pager.totalPages}" (click)="setPage(pager.pageNo + 1)">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Next</span>
+        </a>
+      </li>
+    </ul>
+  </nav>

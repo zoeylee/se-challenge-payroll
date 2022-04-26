@@ -1,0 +1,32 @@
+<div class="container-fluid" style="padding: 0;">
+    
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Payroll Report</a>
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button> -->
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a href="javascript:void(0)" class="nav-link" routerLink="/pages/report-list">Upload</a>
+              <a href="javascript:void(0)" class="nav-link" routerLink="/pages/report-detail">Report</a>
+            </div>
+          </div>
+          <ul class="navbar-nav my-2 my-lg-0">
+            <!-- <li *ngIf="isAuthenticated" class="nav-item">
+                <a href="javascript:void(0)" class="nav-link">Hi, {{ currentUser.username }}</a>
+            </li> -->
+            <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link">Hi, {{ currentUser?.username }}</a>
+            </li>
+            <li *ngIf="isAuthenticated" class="nav-item">
+                <a href="javascript:void(0)" class="nav-link" (click)="onLogout()">Logout</a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+      <div style="margin-top: 5rem;margin-left: 2rem;margin-right: 2rem;">
+            <router-outlet></router-outlet>
+        </div>
+
+</div>

@@ -1,0 +1,65 @@
+  body {
+      font-size: 14px;
+      letter-spacing: -0.1px;
+      word-spacing: 0.5px;
+      text-rendering: optimizeLegibility;
+      font-family: "Open Sans", "微軟正黑體", "Microsoft JhengHei", sans-serif;
+      background-color: #eef2f6;
+      overflow-x: auto;
+      line-height: 1!important;
+      margin: 0px;
+      padding: 0px;
+  }
+
+  html,
+  body {
+      height: 100%;
+      font-size: 14px!important;
+  }
+
+  a.link {
+      cursor: pointer;
+      color: #00aaff;
+  }
+
+  a.link:hover {
+      text-decoration: underline;
+  }
+
+  h4 {
+      font-size: 2.14rem;
+  }
+
+  h5 {
+      font-size: 1.71428571rem;
+  }
+
+  .label {
+      font-size: .92857143rem;
+      font-weight: 700;
+      padding: 0;
+      color: #222;
+  }
+
+  .description-text {
+      font-size: .84rem;
+  }
+
+  .description-title {
+      font-size: .94rem;
+      line-height: 1.6;
+  }
+
+  .page-title {
+      font-size: 1.2rem;
+      font-weight: 600;
+  }
+
+  .section-title {
+      font-size: 1.4rem;
+  }
+
+  mark {
+      border-bottom: 2px solid #ffdd57;
+      background: transparent;
+  }
