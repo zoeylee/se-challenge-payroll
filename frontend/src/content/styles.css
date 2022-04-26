@@ -216,7 +216,7 @@ table.dataTable thead .sorting_desc,
 table.dataTable thead .sorting_asc_disabled,
 table.dataTable thead .sorting_desc_disabled {
   cursor: pointer;
-  *cursor: hand;
+  cursor: hand;
   background-repeat: no-repeat;
   background-position: center right;
   padding-right: 24px;
@@ -573,7 +573,6 @@ table.dataTable td {
 .dataTables_wrapper {
   position: relative;
   clear: both;
-  *zoom: 1;
   zoom: 1;
   font-size: 1rem;
   text-align: left;
@@ -642,7 +641,7 @@ table.dataTable td {
   display: inline-block;
   min-width: 1.5em;
   cursor: pointer;
-  *cursor: hand;
+  cursor: hand;
   border-radius: 2px;
   background-color: white;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #efefef));
@@ -751,7 +750,7 @@ table.dataTable td {
 }
 
 .dataTables_wrapper .dataTables_scroll div.dataTables_scrollBody {
-  *margin-top: -1px;
+  margin-top: -1px;
   -webkit-overflow-scrolling: touch;
   border-color: #c5c5c5;
   width: 100%;

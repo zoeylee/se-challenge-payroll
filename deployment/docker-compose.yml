@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  web:
+    build:
+      context: ../.
+      dockerfile: ./deployment/frontend/Dockerfile
+    environment:
+      - ENV=dev
+      - PayRollUrl=http://payroll-api
+    ports:
+      - "80:80"
+    expose:
+      - "80"
+    depends_on:
+      - payroll-api
+
+  payroll-api:
+    build:
+      context: ../.
+      dockerfile: ./deployment/backend/Dockerfile
+    environment:
+      - ENV=dev
+    expose:
+      - "8000"
+    ports:
+      - "8000:8000"

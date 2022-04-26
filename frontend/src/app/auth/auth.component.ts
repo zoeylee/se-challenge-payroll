@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 export class AuthComponent implements OnInit {
 
   public authType: String = '';
-  public productName: String = 'Employee';
+  public productName: String = 'Payroll';
   public errors: APIErrors = {
     nonFieldErrors: {}
   };
