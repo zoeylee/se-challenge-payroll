@@ -94,9 +94,9 @@ payroll-api_1  | Quit the server with CONTROL-C.
 ## Testing
 Verify that your local installation is working by using Postman to test endpoints:
   - Postman Test
-   - Import enviroment variable from `apitest` folder
+    - Import enviroment variable from `apitest` folder
       - PayRoll Enviroment.postman_environment.json
-   - Import endpoints from `apitest` folder
+    - Import endpoints from `apitest` folder
       - PayRoll API Test.postman_collection.json
   ![image](https://user-images.githubusercontent.com/6045763/165491300-de4327a9-8761-492b-963e-e39d32ee57df.png)
 
