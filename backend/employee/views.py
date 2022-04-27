@@ -102,7 +102,7 @@ class UploadFileView(generics.CreateAPIView):
                     status=status.HTTP_409_CONFLICT
                 )
         try:
-            report = Report(report_name=file, updated_at=datetime.datetime.now())
+            report = Report(report_name=file, updated_at=datetime.datetime.now(datetime.timezone.utc))
             report.save()
         except Exception as e:
             return Response(

@@ -79,6 +79,7 @@ REST_FRAMEWORK = {
         'djangorestframework_camel_case.parser.CamelCaseMultiPartParser',
         'djangorestframework_camel_case.parser.CamelCaseJSONParser',
     ),
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
 }
 
 JWT_AUTH = {
