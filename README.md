@@ -41,7 +41,6 @@ Implement Wave Software Development by using Angular and python, and deploy to l
 * docker:
     ``` bash
     sudo apt install docker
-    sudo usermod -aG docker $USER
     ```
 * docker-compose:
     ``` bash
@@ -49,14 +48,15 @@ Implement Wave Software Development by using Angular and python, and deploy to l
     ```    
 Clone repository:
 ``` bash
-git clone git@github.com:zoeylee/se-challenge-payroll.git
+git clone https://github.com/zoeylee/se-challenge-payroll.git
 ```
 
 ## Deployment
 
 Build and launch the service on local Machine:
 ```bash 
-docker-compost up
+cd se-challenge-payroll/deployment/
+sudo docker-compost up
 ```
 
 Expected output:
