@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "bff602a3-ab2f-44f6-8100-3a17de976066",
+		"name": "PayRoll API Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status test\", function (err, response) {\r",
+							"    const jsonResponse = response.json();\r",
+							"    pm.environment.set(\"token\", `Bearer ${jsonResponse.token}`);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin8",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "1q2w#E$R",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/auth",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Report by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/empl/payroll_report/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"empl",
+						"payroll_report",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Report",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/empl/report",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"empl",
+						"report"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload File",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.sendRequest({\r",
+							"    url: 'http://127.0.0.1:8000/api/v1/auth',\r",
+							"    method: 'POST',\r",
+							"    header: {\r",
+							"        'Content-Type': 'application/json; charset=utf-8',\r",
+							"    },\r",
+							"    body: {\r",
+							"        mode: 'raw',\r",
+							"        raw: JSON.stringify({ username: 'zoey', password: '1q2w#E$R' })\r",
+							"    }\r",
+							"}, function (err, response) {\r",
+							"    const jsonResponse = response.json();\r",
+							"    pm.environment.set(\"token\",  \"Bearer \" + jsonResponse.token);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "{{token}}",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/Zoey/Downloads/time-report-101.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url}}/empl/file_upload",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"empl",
+						"file_upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
