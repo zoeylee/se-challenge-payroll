@@ -56,7 +56,7 @@ git clone https://github.com/zoeylee/se-challenge-payroll.git
 Build and launch the service on local Machine:
 ```bash 
 cd se-challenge-payroll/deployment/
-sudo docker-compost up
+sudo docker-compose up
 ```
 
 Expected output:
